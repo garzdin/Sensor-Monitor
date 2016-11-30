@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4973E4661DEC709000BBCCE9 /* Pods_Automation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23771483912A3FFB168058A9 /* Pods_Automation.framework */; };
 		49FD0A4E1DCD3DA800B3C285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD0A4D1DCD3DA800B3C285 /* AppDelegate.swift */; };
 		49FD0A501DCD3DA800B3C285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD0A4F1DCD3DA800B3C285 /* ViewController.swift */; };
 		49FD0A531DCD3DA800B3C285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FD0A511DCD3DA800B3C285 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23771483912A3FFB168058A9 /* Pods_Automation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Automation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		439B2C13265461CF176F741F /* Pods-Automation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Automation/Pods-Automation.release.xcconfig"; sourceTree = "<group>"; };
 		49FD0A4A1DCD3DA800B3C285 /* Automation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD0A4D1DCD3DA800B3C285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49FD0A4F1DCD3DA800B3C285 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		49FD0A541DCD3DA800B3C285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49FD0A571DCD3DA800B3C285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49FD0A591DCD3DA800B3C285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8681D94F83FC206DEAE23B75 /* Pods-Automation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Automation/Pods-Automation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4973E4661DEC709000BBCCE9 /* Pods_Automation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		325CA6CD2A7325258921465B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23771483912A3FFB168058A9 /* Pods_Automation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49FD0A411DCD3DA800B3C285 = {
 			isa = PBXGroup;
 			children = (
 				49FD0A4C1DCD3DA800B3C285 /* Automation */,
 				49FD0A4B1DCD3DA800B3C285 /* Products */,
+				ACF5E966BEA7B770BD01AEC6 /* Pods */,
+				325CA6CD2A7325258921465B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Automation;
 			sourceTree = "<group>";
 		};
+		ACF5E966BEA7B770BD01AEC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8681D94F83FC206DEAE23B75 /* Pods-Automation.debug.xcconfig */,
+				439B2C13265461CF176F741F /* Pods-Automation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FD0A5C1DCD3DA800B3C285 /* Build configuration list for PBXNativeTarget "Automation" */;
 			buildPhases = (
+				96756894C369C9AFF8E81BC7 /* [CP] Check Pods Manifest.lock */,
 				49FD0A461DCD3DA800B3C285 /* Sources */,
 				49FD0A471DCD3DA800B3C285 /* Frameworks */,
 				49FD0A481DCD3DA800B3C285 /* Resources */,
+				F73757F49C0DCD79E48080B9 /* [CP] Embed Pods Frameworks */,
+				95EF6B84ED2A06E708021567 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95EF6B84ED2A06E708021567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Automation/Pods-Automation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96756894C369C9AFF8E81BC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F73757F49C0DCD79E48080B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Automation/Pods-Automation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49FD0A461DCD3DA800B3C285 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +257,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +307,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -257,26 +334,32 @@
 		};
 		49FD0A5D1DCD3DA800B3C285 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8681D94F83FC206DEAE23B75 /* Pods-Automation.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5TZ5UX6U2K;
 				INFOPLIST_FILE = Automation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teodorgarzdin.Automation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		49FD0A5E1DCD3DA800B3C285 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439B2C13265461CF176F741F /* Pods-Automation.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5TZ5UX6U2K;
 				INFOPLIST_FILE = Automation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teodorgarzdin.Automation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +383,7 @@
 				49FD0A5E1DCD3DA800B3C285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

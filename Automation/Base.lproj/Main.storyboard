@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Automation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieh-fp-Gfn">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL8-qd-dic">
+                                <rect key="frame" x="187.5" y="343.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtS-pK-FDO">
+                                <rect key="frame" x="187.5" y="323.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7H-Bd-GVN">
+                                <rect key="frame" x="120.5" y="60" width="134.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-ph-mpG">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTb-9I-ETk">
+                                <rect key="frame" x="177" y="607" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="JkS-Pa-S07"/>
+                                    <constraint firstAttribute="height" constant="20" id="rTh-iq-jiH"/>
+                                </constraints>
+                                <state key="normal" image="Reload Icon">
+                                    <color key="titleColor" red="1" green="0.41601588010000001" blue="0.36677411250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Alx-oh-B2L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.41568627450980389" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DTb-9I-ETk" secondAttribute="bottom" constant="40" id="0Eg-A5-Vhg"/>
+                            <constraint firstItem="JtS-pK-FDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5qH-zR-cpu"/>
+                            <constraint firstItem="ieh-fp-Gfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5wx-iC-34P"/>
+                            <constraint firstItem="R2C-ph-mpG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ck-aA-CEg"/>
+                            <constraint firstItem="ieh-fp-Gfn" firstAttribute="top" secondItem="JtS-pK-FDO" secondAttribute="bottom" constant="10" id="7Qu-jR-qbC"/>
+                            <constraint firstItem="DTb-9I-ETk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfE-Pl-evZ"/>
+                            <constraint firstItem="ieh-fp-Gfn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OwG-Ac-WUv"/>
+                            <constraint firstItem="E7H-Bd-GVN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="TeG-gc-ntY"/>
+                            <constraint firstItem="R2C-ph-mpG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XIJ-bK-OXe"/>
+                            <constraint firstItem="E7H-Bd-GVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXX-DG-9Wa"/>
+                            <constraint firstItem="SL8-qd-dic" firstAttribute="top" secondItem="ieh-fp-Gfn" secondAttribute="bottom" constant="10" id="fvn-Dg-vbs"/>
+                            <constraint firstItem="SL8-qd-dic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qQ1-y5-IOM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="humidityLabel" destination="ieh-fp-Gfn" id="XqC-7q-gRU"/>
+                        <outlet property="lightLabel" destination="SL8-qd-dic" id="rlq-Ga-fdF"/>
+                        <outlet property="spinner" destination="R2C-ph-mpG" id="ODN-I7-BwU"/>
+                        <outlet property="temperatureLabel" destination="JtS-pK-FDO" id="6V4-Z7-9Cg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Reload Icon" width="39" height="39"/>
+    </resources>
 </document>
